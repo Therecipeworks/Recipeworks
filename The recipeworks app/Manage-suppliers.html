@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Suppliers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<div id="loadingSpinner" style="display: none;">
+    <div class="spinner"></div>
+  </div>
+  <div id="pageContainer">
+    <div id="page"></div>
+  </div>
+  
+  
+<body>
+  <header>
+    <h1>RecipeWorks</h1>
+    <p>Manage Your Suppliers</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Add New Supplier</h2>
+      <form id="addSupplierForm">
+        <label for="supplierName">Supplier Name:</label>
+        <input type="text" id="supplierName" placeholder="Enter supplier name" required>
+        <label for="productList">Products (comma-separated):</label>
+        <textarea id="productList" placeholder="e.g., Flour (1kg), Sugar (1kg), Butter (500g)"></textarea>
+        <button type="submit">Add Supplier</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Supplier List</h2>
+      <ul id="supplierList">
+        <!-- Dynamically populated -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 RecipeWorks. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecipeWorks - Recipe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>RecipeWorks</h1>
+    <p>Your ultimate recipe and kitchen management app</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipe.html" class="active">Recipe</a></li>
+      <li><a href="gp-calculator.html">GP Calculator</a></li>
+      <li><a href="allergen-matrix.html">Allergen Matrix</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="supplier-registration.html">Supplier Registration</a></li>
+      <li><a href="supplier-dashboard.html">Supplier Dashboard</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="recipe-card">
+      <h2>Flourless Chocolate Torte</h2>
+      <img src="https://via.placeholder.com/300x200" alt="Flourless Chocolate Torte">
+      <p>Rich and decadent, perfect for any occasion.</p>
+      <button class="btn-primary">Add to Shopping List</button>
+      <button class="btn-secondary">Favorite</button>
+    </section>
+
+    <section class="recipe-details">
+      <h3>Details</h3>
+      <p><strong>Cooking Time:</strong> 45 minutes</p>
+      <p><strong>Servings:</strong> 8</p>
+    </section>
+
+    <section class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>200g dark chocolate</li>
+        <li>150g unsalted butter</li>
+        <li>4 large eggs</li>
+        <li>100g sugar</li>
+        <li>50g ground almonds</li>
+        <li>Pinch of salt</li>
+      </ul>
+    </section>
+
+    <section class="instructions">
+      <h3>Instructions</h3>
+      <ol>
+        <li>Preheat the oven to 180°C (350°F).</li>
+        <li>Melt the chocolate and butter together in a heatproof bowl over simmering water.</li>
+        <li>Whisk the eggs and sugar until pale and fluffy.</li>
+        <li>Fold in the melted chocolate mixture.</li>
+        <li>Gently stir in the ground almonds and salt.</li>
+        <li>Pour into a greased baking tin and bake for 25-30 minutes.</li>
+      </ol>
+    </section>
+
+    <section class="recipe-actions">
+      <button class="btn-primary" onclick="addToShoppingList()">Add to Shopping List</button>
+      <button class="btn-secondary">Favorite</button>
+      <button>Edit Recipe</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 RecipeWorks. All rights reserved.</

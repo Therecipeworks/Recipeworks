@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecipeWorks - Supplier Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>RecipeWorks</h1>
+    <p>Manage your product catalog and connect with businesses.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipe.html">Recipe</a></li>
+      <li><a href="gp-calculator.html">GP Calculator</a></li>
+      <li><a href="allergen-matrix.html">Allergen Matrix</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="supplier-registration.html">Supplier Registration</a></li>
+      <li><a href="supplier-dashboard.html" class="active">Supplier Dashboard</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Your Products</h2>
+      <ul id="supplierProductList">
+        <!-- Products will be dynamically populated here -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Add New Product</h2>
+      <form id="addProductForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" placeholder="Enter product name" required>
+
+        <label for="productPrice">Price (£):</label>
+        <input type="number" id="productPrice" placeholder="Enter price" required>
+
+        <button type="submit" class="btn-primary">Add Product</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 RecipeWorks. All rights reserved.</p>
+  </footer>
+</body>
+</html>

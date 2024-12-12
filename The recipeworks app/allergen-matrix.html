@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecipeWorks - Allergen Matrix</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>RecipeWorks</h1>
+    <p>Your ultimate recipe and kitchen management app</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipe.html">Recipe</a></li>
+      <li><a href="gp-calculator.html">GP Calculator</a></li>
+      <li><a href="allergen-matrix.html" class="active">Allergen Matrix</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="supplier-registration.html">Supplier Registration</a></li>
+      <li><a href="supplier-dashboard.html">Supplier Dashboard</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Allergen Matrix</h2>
+      <p>Select the allergens present in this recipe:</p>
+
+      <form id="allergenMatrixForm">
+        <ul class="allergen-list">
+          <li><label><input type="checkbox" name="allergen" value="Celery"> Celery</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Cereals containing gluten"> Cereals containing gluten</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Crustaceans"> Crustaceans</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Eggs"> Eggs</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Fish"> Fish</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Lupin"> Lupin</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Milk"> Milk</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Molluscs"> Molluscs</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Mustard"> Mustard</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Nuts"> Nuts</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Peanuts"> Peanuts</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Sesame seeds"> Sesame seeds</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Soya"> Soya</label></li>
+          <li><label><input type="checkbox" name="allergen" value="Sulphur dioxide"> Sulphur dioxide</label></li>
+        </ul>
+        <button type="submit" class="btn-primary">Save Allergens</button>
+      </form>
+
+      <h3>Selected Allergens</h3>
+      <ul id="selectedAllergens">
+        <!-- Selected allergens will appear here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 RecipeWorks. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecipeWorks - Supplier Registration</title>
+  <link rel="stylesheet" href="style.css"> <!-- Ensure the path is correct -->
+  <script src="script.js" defer></script> <!-- Ensure the path is correct -->
+</head>
+<body>
+  <header>
+    <h1>RecipeWorks</h1>
+    <p>Sign up as a supplier to manage your products and connect with businesses.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipe.html">Recipe</a></li>
+      <li><a href="gp-calculator.html">GP Calculator</a></li>
+      <li><a href="allergen-matrix.html">Allergen Matrix</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="supplier-registration.html" class="active">Supplier Registration</a></li>
+      <li><a href="supplier-dashboard.html">Supplier Dashboard</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Register as a Supplier</h2>
+      <form id="supplierRegistrationForm">
+        <label for="supplierName">Supplier Name:</label>
+        <input type="text" id="supplierName" placeholder="Enter supplier name" required>
+
+        <label for="supplierEmail">Email:</label>
+        <input type="email" id="supplierEmail" placeholder="Enter email" required>
+
+        <label for="supplierProducts">Products (comma-separated):</label>
+        <textarea id="supplierProducts" placeholder="e.g., Flour (1kg), Sugar (1kg), Butter (500g)" required></textarea>
+
+        <button type="submit" class="btn-primary">Register</button>
+      </form>
+
+      <h3>Registered Suppliers</h3>
+      <ul id="supplierList">
+        <!-- Registered suppliers will appear here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 RecipeWorks. All rights reserved.</p>
+  </footer>
+</body>
+</html>

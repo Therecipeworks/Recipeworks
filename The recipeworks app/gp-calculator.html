@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecipeWorks - GP Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>RecipeWorks</h1>
+    <p>Your ultimate recipe and kitchen management app</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipe.html">Recipe</a></li>
+      <li><a href="gp-calculator.html" class="active">GP Calculator</a></li>
+      <li><a href="allergen-matrix.html">Allergen Matrix</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="supplier-registration.html">Supplier Registration</a></li>
+      <li><a href="supplier-dashboard.html">Supplier Dashboard</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>GP Calculator</h2>
+      <p>Use this tool to calculate gross profit for your recipes.</p>
+      <form id="gpForm">
+        <label for="ingredientCost">Ingredient Cost (£):</label>
+        <input type="number" id="ingredientCost" placeholder="Enter ingredient cost" required>
+
+        <label for="laborCost">Labor Cost (£):</label>
+        <input type="number" id="laborCost" placeholder="Enter labor cost" required>
+
+        <button type="submit" class="btn-primary">Calculate GP</button>
+      </form>
+
+      <canvas id="profitChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 RecipeWorks. All rights reserved.</p>
+  </footer>
+</body>
+</html>
